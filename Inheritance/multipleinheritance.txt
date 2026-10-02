@@ -1,0 +1,17 @@
+Multiple inheritance is a type of inheritance in which one child class inherits 
+from two or more parent classes.
+Java does not support multiple inheritance through classes because it can 
+create ambiguity. If two parent classes contain methods with the same name, 
+the child class would not know which method to inherit or execute. 
+This is commonly known as the Diamond Problem.
+
+Java avoids this ambiguity by not allowing a class to extend multiple classes. 
+However, multiple inheritance can be achieved through interfaces.
+
+Key points:
+
+One child → multiple parents.
+Not supported through classes in Java.
+Main reason: ambiguity / Diamond Problem.
+Multiple inheritance is possible through interfaces.
+Helps Java maintain a simpler and less confusing inheritance structure.

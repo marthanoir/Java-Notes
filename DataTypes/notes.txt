@@ -1,0 +1,15 @@
+DATA TYPES:
+Primitive -> 
+1. Integer (All positive and negative)
+2. Float (Decimal numbers)
+3. Character (Strings)
+4. Boolean
+
+INTEGERS:
+int -> 4 bytes
+long -> 8 bytes
+short -> 2 bytes
+byte -> 1 byte -> -2^7 to 2^7-1 = 128 to 127
+
+FLOAT: 4 bytes
+DOUBLE: 8 bytes

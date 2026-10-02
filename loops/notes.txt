@@ -1,0 +1,11 @@
+When do we use which loop?
+
+We use FOR loop when we know the starting and 
+ending point and also know the progression.
+
+We use WHILE loop in cases of reading of reading a file.
+because in reading a file thing, we have to go through each 
+and every character until we reach the end.
+
+We use DO WHILE iff we want that even if the condition is 
+false, the code must run atleast once.
