@@ -4,11 +4,11 @@ class Human
 {
     private String name;
     private int age = 21;
-    private int bodycount;
+    private int count;
 
-    public void setbodycount(int n)
+    public void setcount(int n)
     {
-        bodycount= n;
+        count= n;
     }
 
     public void setname(String s)
@@ -26,9 +26,9 @@ class Human
         return name;
     }
 
-    public int getbodycount()
+    public int getcount()
     {
-        return bodycount;
+        return count;
     }
 
     // public void show()
@@ -41,10 +41,10 @@ public class encap {
         Human hum = new Human();
 
         hum.setname("Richeek Mitra Mazumdar");
-        hum.setbodycount(2);
+        hum.setcount(2);
         hum.getAge();
 
-        System.out.println(hum.getname()+ " : "+ hum.getAge()+" -> "+hum.getbodycount());
+        System.out.println(hum.getname()+ " : "+ hum.getAge()+" -> "+hum.getcount());
 
         // hum.show();
     }
