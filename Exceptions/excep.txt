@@ -1,0 +1,74 @@
+Definition:
+
+Exception handling is a mechanism in Java used to handle runtime errors so that the normal flow of program execution can be maintained.
+
+An exception is an unwanted event that occurs during program execution, such as division by zero or attempting to access an invalid array index.
+
+Why do we need exception handling?
+
+- Prevents abnormal program termination where an exception can be handled.
+- Maintains the normal flow of program execution.
+- Separates error-handling code from normal program logic.
+- Helps identify and manage runtime problems.
+
+Keywords used in exception handling:
+
+1. `try` — Contains code that may cause an exception.
+2. `catch` — Handles an exception thrown from the associated `try` block.
+3. `finally` — Contains cleanup code that normally executes whether an exception occurs or not.
+4. `throw` — Used to explicitly throw an exception.
+5. `throws` — Declares exceptions that a method may pass to its caller.
+
+Types of exceptions:
+
+1. Checked exceptions: Checked by the compiler; they must be caught or declared where required. Example: `IOException`.
+2. Unchecked exceptions: Occur under the `RuntimeException` hierarchy and are not subject to the compiler's catch-or-declare requirement. 
+Example: `ArithmeticException`.
+3. Errors: Serious problems generally not intended to be handled by ordinary application code. Example: `OutOfMemoryError`.
+
+Important exam points:
+
+- Exception handling uses `try`, `catch`, `finally`, `throw`, and `throws`.
+- Multiple `catch` blocks can handle different exception types.
+- A `try` block must be followed by at least one `catch` or a `finally` block, or both.
+- Checked exceptions are checked at compile time; unchecked exceptions are not.
+
+One-line revision:
+
+Exception handling in Java manages runtime exceptions using mechanisms such as `try`, `catch`, and `finally` to help maintain the normal flow of a program.
+
+
+HIERARCHY IN EXCEPTIONS
+
+Definition: The Java exception hierarchy represents the structure through which Java handles exceptions and errors. All exceptions and errors are subclasses of the Throwable class.
+
+The hierarchy is divided into two main categories: Exception and Error.
+
+1. Throwable
+
+Throwable is the superclass of all exceptions and errors in Java. It represents conditions that can be thrown and caught.
+
+2. Exception
+
+An exception represents a condition that interrupts the normal flow of a program but may be handled by the application.
+
+Exceptions are classified into two types:
+- Checked exceptions: Checked by the compiler. They must be caught or declared using throws where required. Examples: IOException, SQLException.
+- Unchecked exceptions: Subclasses of RuntimeException. The compiler does not require them to be caught or declared. Examples: ArithmeticException, 
+NullPointerException, ArrayIndexOutOfBoundsException.
+3. Error
+
+An error represents a serious problem, often related to the JVM or system resources. Errors are generally not intended to be handled by ordinary 
+application code.
+
+Examples:
+- OutOfMemoryError — insufficient memory available to the JVM.
+- StackOverflowError — the thread's stack exceeds its permitted size, often due to deep or infinite recursion.
+Important exam points:
+- Throwable is the parent of Exception and Error.
+- Checked exceptions are checked at compile time.
+- Unchecked exceptions belong to the RuntimeException hierarchy.
+- Errors and exceptions are different categories.
+- Both exceptions and errors can occur at runtime, but they represent different kinds of problems.
+
+One-line revision: Java's hierarchy is Throwable → Exception / Error, with Exception further divided into checked exceptions and unchecked exceptions.
