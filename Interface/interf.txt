@@ -1,0 +1,56 @@
+Definition:
+
+An interface in Java is a reference type that defines a contract of behaviour that implementing classes agree to provide. 
+It is used to achieve abstraction and supports multiple inheritance of type.
+
+Why do we use interfaces?
+- To achieve abstraction.
+- To define common behaviour for unrelated classes.
+- To support multiple inheritance through interfaces.
+- To promote loose coupling and improve code flexibility.
+Important features:
+- An interface is declared using the interface keyword.
+- A class uses the implements keyword to implement an interface.
+- Abstract methods declared in an interface are implicitly public and abstract.
+- Variables declared in an interface are implicitly public, static, and final.
+- Interfaces can contain default, static, and private methods, subject to Java's interface rules.
+- A class can implement multiple interfaces.
+- An interface cannot be instantiated directly.
+Example in simple words:
+
+An interface named Vehicle may define a behaviour called start(). Classes such as Car and Bike can implement this interface and 
+provide their own implementations of start().
+
+One-line revision:
+
+An interface defines a contract that implementing classes must follow and supports abstraction and multiple inheritance of type in Java.
+
+
+TYPES OF INTERFACES: 
+
+Java interfaces are commonly classified into three types based on their characteristics.
+
+1. Normal Interface
+
+A normal interface contains two or more abstract methods. Implementing classes provide implementations for its abstract methods.
+
+Example in words: A Vehicle interface may define start() and stop() methods.
+
+2. Functional Interface (SAM Interface)
+
+A functional interface contains exactly one abstract method. It can also contain default and static methods. 
+It is commonly used with lambda expressions.
+
+Example: Runnable, which has the abstract method run().
+
+3. Marker Interface
+
+A marker interface contains no methods or fields. It is used to provide metadata or indicate a special 
+capability to the JVM or certain APIs.
+
+Examples: Serializable and Cloneable.
+
+One-line revision:
+
+Normal interfaces define multiple behaviours, functional interfaces define one abstract behaviour, and marker interfaces indicate a 
+special property without declaring methods.

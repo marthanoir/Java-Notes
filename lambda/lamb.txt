@@ -1,0 +1,28 @@
+A lambda expression is a feature introduced in Java 8 that provides a short and concise way to 
+implement the abstract method of a functional interface without creating a separate class or writing a lengthy implementation.
+
+Why do we use lambda expressions?
+- To reduce boilerplate code.
+- To improve code readability.
+- To implement functional interfaces easily.
+- To support functional programming in Java.
+Syntax:
+
+(parameters) -> expression or method body
+
+The arrow operator -> separates the parameters from the implementation.
+
+Example in simple words:
+
+A Runnable interface has one abstract method called run(). A lambda expression can provide the implementation of run() 
+without requiring a separate class.
+
+Important exam points:
+- Lambda expressions were introduced in Java 8.
+- They work with functional interfaces, which have exactly one abstract method.
+- They can have zero, one, or multiple parameters.
+- The body can contain a single expression or a block of statements.
+- They reduce code length and support functional programming.
+One-line revision:
+
+A lambda expression is a concise way to implement a functional interface's abstract method using the -> operator.

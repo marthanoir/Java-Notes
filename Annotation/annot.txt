@@ -1,0 +1,27 @@
+Definition:
+
+Annotations in Java are metadata that provide additional information about program elements, such as classes, 
+methods, variables, and parameters. They do not directly change the program's logic but can be used by the compiler, 
+development tools, and at runtime.
+
+Why do we use annotations?
+- To provide information to the compiler.
+- To detect errors and generate warnings.
+- To reduce configuration and simplify development.
+- To provide instructions to frameworks and tools.
+
+Common built-in annotations:
+1. @Override — Indicates that a method is intended to override a method from a superclass.
+2. @Deprecated — Marks a program element as outdated and not recommended for use.
+3. @SuppressWarnings — Requests the compiler to suppress specified warnings.
+4. @FunctionalInterface — Indicates that an interface is intended to have exactly one abstract method.
+
+Important exam points:
+- Annotations begin with the @ symbol.
+- They provide metadata rather than directly implementing program logic.
+- Java supports built-in as well as user-defined annotations.
+- User-defined annotations are declared using @interface.
+- Annotations can be processed at compile time or runtime, depending on their retention policy.
+
+One-line revision:
+Annotations provide metadata about Java program elements to assist compilers, tools, and frameworks.
