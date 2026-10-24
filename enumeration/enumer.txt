@@ -1,0 +1,25 @@
+Definition:
+
+An enum (enumeration) in Java is a special data type used to define a fixed set of named constants. 
+It is useful when a variable should have only a limited number of predefined values.
+
+Why do we use enums?
+- To represent a fixed set of values.
+- To improve code readability.
+- To prevent invalid values from being used accidentally.
+- To make code easier to maintain.
+Example in simple words:
+
+An enum called Day can contain seven constants: MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, and SUNDAY. 
+A variable of type Day can hold one of these predefined values.
+
+Important exam points:
+- An enum is declared using the enum keyword.
+- Enum constants are implicitly public, static, and final.
+- Enums are type-safe, meaning only valid constants of that enum type can be assigned.
+- An enum can have fields, methods, and constructors.
+- Enum constructors cannot be public or protected.
+- Every enum implicitly extends java.lang.Enum, so it cannot extend another class.
+One-line revision:
+
+An enum is a special Java data type that defines a fixed set of type-safe named constants.
