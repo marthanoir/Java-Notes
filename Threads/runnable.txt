@@ -1,0 +1,26 @@
+Runnable is a functional interface in Java that represents a task to be executed by a thread. 
+It belongs to the java.lang package and contains a single abstract method called run().
+
+Why do we use Runnable?
+- To define the task that a thread needs to execute.
+- To achieve multithreading without extending the Thread class.
+- To allow a class to extend another class while still defining a thread task.
+- To separate the task's logic from the thread-management mechanism.
+
+Important features:
+- Runnable contains the abstract method run().
+- It is a functional interface, so it can be implemented using a lambda expression.
+- A Runnable object does not itself create or start a thread.
+- A Runnable task can be passed to a Thread object.
+- Calling start() on the Thread starts a new thread that executes the task.
+
+Runnable vs Thread:
+Runnable	                               |  Thread
+Interface	                               |  Class
+Defines the task	                       |  Represents and manages a thread
+Implemented using implements               |  Extended using extends
+Allows the class to extend another classmmm|  Uses the single class inheritance slot
+
+One-line revision:
+
+The Runnable interface defines a task through its run() method, which can be executed concurrently by a thread.

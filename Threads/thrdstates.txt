@@ -1,0 +1,47 @@
+The thread life cycle represents the different states a thread passes through from its creation until its execution finishes. 
+Java defines six official thread states in the `Thread.State` enum.
+
+Six States of a Thread:
+
+1\. NEW: A thread object has been created, but its `start()` method has not yet been called.
+
+2\. RUNNABLE: The thread is ready to run or is executing. Java combines the ready and running conditions into this state.
+
+3\. BLOCKED: The thread is waiting to acquire a monitor lock to enter a synchronized block or method.
+
+4\. WAITING: The thread waits indefinitely for another thread to perform a particular action. This can occur through methods 
+such as `join()` without a timeout.
+
+5\. TIMED_WAITING: The thread waits for a specified period. This can occur through methods such as `sleep()` or timed `join()`.
+
+6\. TERMINATED: The thread has finished executing its `run()` method or terminated due to an uncaught exception.
+
+Thread life cycle flow:
+
+NEW
+
+Calling `start()`
+
+RUNNABLE
+
+May transition to and from waiting states
+
+BLOCKED
+
+WAITING
+
+TIMED_WAITING
+
+Returns to RUNNABLE when the relevant condition is satisfied
+
+TERMINATED
+
+Important exam points:
+
+- Java has six official thread states.
+- `start()` moves a new thread toward execution; directly calling `run()` does not start a new thread.
+- `sleep()` causes `TIMED_WAITING` and does not release any monitor locks held.
+- A terminated thread cannot be restarted.
+- Thread states can be checked using the `getState()` method.
+
+One-line revision: A Java thread progresses through six states: NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, and TERMINATED.

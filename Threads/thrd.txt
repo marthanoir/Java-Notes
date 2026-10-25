@@ -1,0 +1,38 @@
+A thread is a lightweight sub-process and the smallest unit of execution within a process. In Java, 
+multithreading allows multiple threads to execute concurrently within the same program.
+
+Why do we use threads?
+- To perform multiple tasks concurrently.
+- To improve CPU utilization.
+- To keep applications responsive while performing background tasks.
+- To perform independent operations efficiently.
+
+Ways to create a thread in Java:
+1. Extending the Thread class: Create a class that extends Thread and override its run() method.
+2. Implementing the Runnable interface: Create a class that implements Runnable and define its run() method. 
+This approach allows the class to extend another class if needed.
+
+Important thread methods:
+- start() — Starts a new thread and causes its run() method to execute.
+- run() — Contains the task performed by the thread.
+- sleep() — Pauses the current thread for a specified duration, subject to scheduling.
+- join() — Waits for another thread to finish.
+- isAlive() — Checks whether a thread has started and has not yet terminated.
+Thread life cycle:
+
+A Java thread can move through these states:
+1. NEW — Thread object created but not started.
+2. RUNNABLE — Ready to run or running.
+3. BLOCKED — Waiting to acquire a monitor lock.
+4. WAITING — Waiting indefinitely for another thread's action.
+5. TIMED_WAITING — Waiting for a specified period.
+6. TERMINATED — Execution has finished.
+
+Advantages of multithreading:
+- Better responsiveness.
+- Efficient sharing of resources.
+- Improved concurrency and CPU utilization.
+
+One-line revision:
+
+A thread is a lightweight unit of execution in Java that enables concurrent task execution through multithreading.
